@@ -1,0 +1,605 @@
+
+/* =====================================
+   LOVENEST - COMPLETE STYLESHEET
+   Theme: Elegant Pink & White
+===================================== */
+
+
+/* 1. GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* 2. GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* 3. ROOT COLOURS */
+:root {
+    --primary-pink: #e75480;
+    --light-pink: #fff0f5;
+    --soft-pink: #f8bbd0;
+    --dark-pink: #c93667;
+    --white: #ffffff;
+    --text-dark: #40313a;
+    --text-light: #806b77;
+}
+
+
+/* 4. BODY */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+
+/* 5. GENERAL ELEMENTS */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 6. NAVIGATION */
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(231, 84, 128, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary-pink);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-pink);
+}
+
+.nav-button {
+    background: var(--primary-pink);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: var(--dark-pink);
+    transform: translateY(-3px);
+}
+
+
+/* 7. HERO SECTION */
+.hero {
+    min-height: 85vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffffff,
+        #ffe4ec
+    );
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.subtitle {
+    color: var(--primary-pink);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--primary-pink);
+}
+
+.hero-description {
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.primary-button {
+    display: inline-block;
+    background: var(--primary-pink);
+    color: white;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background: var(--dark-pink);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(231, 84, 128, 0.25);
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 430px;
+    position: relative;
+}
+
+.image-frame {
+    padding: 12px;
+    background: white;
+    border-radius: 220px 220px 20px 20px;
+    box-shadow: 0 20px 50px rgba(231, 84, 128, 0.15);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px 210px 12px 12px;
+}
+
+.floating-heart {
+    position: absolute;
+    top: 20%;
+    right: -20px;
+    color: var(--primary-pink);
+    font-size: 45px;
+    animation: heartbeat 1.5s infinite;
+}
+
+
+/* 8. ABOUT SECTION */
+.about {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2,
+.counter h2,
+.surprise h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin-bottom: 18px;
+}
+
+.section-heading > p:last-child,
+.counter > p:not(.subtitle),
+.surprise > p:not(.subtitle) {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.love-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.love-card {
+    background: var(--light-pink);
+    padding: 40px 25px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.love-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(231, 84, 128, 0.12);
+}
+
+.love-card span {
+    font-size: 38px;
+    color: var(--primary-pink);
+}
+
+.love-card h3 {
+    font-size: 23px;
+    margin: 18px 0 12px;
+}
+
+.love-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+
+/* 9. LOVE COUNTER */
+.counter {
+    padding: 90px 8%;
+    text-align: center;
+    background: var(--light-pink);
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.counter-box div {
+    background: white;
+    min-width: 120px;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(231, 84, 128, 0.08);
+}
+
+.counter-box span {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--primary-pink);
+}
+
+.counter-box p {
+    color: var(--text-light);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* 10. MEMORIES GALLERY */
+.memories {
+    padding: 100px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(231, 84, 128, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* 11. LOVE QUIZ */
+.quiz {
+    padding: 100px 8%;
+    background: #fff8fa;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(231, 84, 128, 0.1);
+    text-align: center;
+}
+
+.quiz-container h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.quiz-option {
+    padding: 15px;
+    border: 1px solid var(--soft-pink);
+    border-radius: 12px;
+    background: white;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+.quiz-option:hover {
+    background: var(--light-pink);
+    border-color: var(--primary-pink);
+}
+
+#quiz-result {
+    margin-bottom: 20px;
+    color: var(--primary-pink);
+    font-weight: 600;
+}
+
+
+/* 12. SURPRISE SECTION */
+.surprise {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #fff0f5,
+        #ffffff
+    );
+}
+
+.surprise .primary-button {
+    margin-top: 25px;
+}
+
+#surprise-message {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(231, 84, 128, 0.12);
+}
+
+#surprise-message h3 {
+    color: var(--primary-pink);
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+#surprise-message p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* 13. FOOTER */
+footer {
+    padding: 45px 8%;
+    text-align: center;
+    background: #fff0f5;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+footer h2 span {
+    color: var(--primary-pink);
+}
+
+footer p {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+/* 14. FLOATING HEARTS */
+.hearts-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.heart {
+    position: absolute;
+    bottom: -30px;
+    color: var(--primary-pink);
+    animation: floatUp 6s linear forwards;
+    opacity: 0.7;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* 15. HEARTBEAT ANIMATION */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* 16. TABLET RESPONSIVENESS */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 70px 5%;
+        gap: 30px;
+    }
+
+    .image-frame img {
+        height: 380px;
+    }
+
+    .love-cards,
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* 17. MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 6%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 85%;
+        margin-top: 20px;
+    }
+
+    .image-frame img {
+        height: 350px;
+    }
+
+    .love-cards,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .memories,
+    .quiz,
+    .counter,
+    .surprise {
+        padding: 70px 6%;
+    }
+
+    .quiz-container {
+        padding: 25px 18px;
+    }
+
+    .counter-box {
+        gap: 12px;
+    }
+
+    .counter-box div {
+        min-width: 100px;
+        padding: 20px 12px;
+    }
+
+}

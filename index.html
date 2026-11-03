@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LoveNest | A Little World of Love</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts-container" id="hearts-container"></div>
+
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">LoveNest<span>♥</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#quiz">Love Quiz</a></li>
+            </ul>
+
+            <a href="#surprise" class="nav-button">A Surprise ♥</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="subtitle">A LITTLE WORLD MADE FOR YOU</p>
+
+                <h1>
+                    You Make My World
+                    <span>Beautiful</span>
+                </h1>
+
+                <p class="hero-description">
+                    Every moment becomes special when you're part
+                    of it. This little corner of the internet
+                    is dedicated to you.
+                </p>
+
+                <a href="#about" class="primary-button">
+                    Discover Our Story ♥
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="image-frame">
+                    <img
+                        src="https://placehold.co/500x600/F8BBD0/FFFFFF?text=Our+Special+Moment"
+                        alt="A special memory"
+                    >
+                </div>
+
+                <span class="floating-heart">♥</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- About / Love Message -->
+        <section class="about" id="about">
+
+            <div class="section-heading">
+
+                <p class="subtitle">A MESSAGE FROM THE HEART</p>
+
+                <h2>Why You're So Special</h2>
+
+                <p>
+                    Some people make ordinary days feel extraordinary.
+                    You are one of those people.
+                </p>
+
+            </div>
+
+            <div class="love-cards">
+
+                <article class="love-card">
+                    <span>♥</span>
+                    <h3>Your Smile</h3>
+                    <p>One smile can make an ordinary day brighter.</p>
+                </article>
+
+                <article class="love-card">
+                    <span>✿</span>
+                    <h3>Your Kindness</h3>
+                    <p>Your beautiful heart makes everything better.</p>
+                </article>
+
+                <article class="love-card">
+                    <span>♡</span>
+                    <h3>Your Presence</h3>
+                    <p>Every moment feels special with you around.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Love Counter -->
+        <section class="counter" id="counter">
+
+            <p class="subtitle">EVERY SECOND MATTERS</p>
+
+            <h2>Our Special Journey</h2>
+
+            <p>Every beautiful moment deserves to be counted.</p>
+
+            <div class="counter-box" id="love-counter">
+                <div>
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+
+                <div>
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+
+                <div>
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+
+                <div>
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Memories / Gallery -->
+        <section class="memories" id="memories">
+
+            <div class="section-heading">
+
+                <p class="subtitle">MOMENTS TO REMEMBER</p>
+
+                <h2>Our Beautiful Memories</h2>
+
+                <p>
+                    Every picture tells a story worth remembering.
+                </p>
+
+            </div>
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x450/F8BBD0/FFFFFF?text=Memory+One"
+                         alt="Memory one">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x450/F4AFC4/FFFFFF?text=Memory+Two"
+                         alt="Memory two">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://placehold.co/400x450/EFA5BC/FFFFFF?text=Memory+Three"
+                         alt="Memory three">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Love Quiz -->
+        <section class="quiz" id="quiz">
+
+            <div class="section-heading">
+
+                <p class="subtitle">LET'S HAVE SOME FUN</p>
+
+                <h2>A Little Love Quiz</h2>
+
+                <p>Let's see how well you know our special moments!</p>
+
+            </div>
+
+            <div class="quiz-container">
+
+                <h3 id="question">What makes our moments special?</h3>
+
+                <div class="quiz-options" id="quiz-options">
+
+                    <button class="quiz-option">Beautiful memories</button>
+
+                    <button class="quiz-option">Kindness and care</button>
+
+                    <button class="quiz-option">Little surprises</button>
+
+                </div>
+
+                <p id="quiz-result"></p>
+
+                <button id="next-question" class="primary-button">
+                    Next Question
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Surprise Message -->
+        <section class="surprise" id="surprise">
+
+            <p class="subtitle">SOMETHING SPECIAL FOR YOU</p>
+
+            <h2>A Little Surprise Awaits</h2>
+
+            <p>
+                There is something beautiful I want you to see.
+            </p>
+
+            <button id="surprise-button" class="primary-button">
+                Open Your Surprise ♥
+            </button>
+
+            <div id="surprise-message" class="hidden">
+
+                <h3>You Are Truly Special! 💗</h3>
+
+                <p>
+                    No matter how ordinary a day may seem,
+                    having someone special makes it beautiful.
+                    Never forget how much you are appreciated.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>LoveNest <span>♥</span></h2>
+
+        <p>Made with love, just for you.</p>
+
+        <p class="copyright">
+            &copy; 2026 LoveNest. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</body>
+
+</html>
